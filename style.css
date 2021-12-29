@@ -4,16 +4,12 @@ body {
   font-size: 18px;
   background-color: #19a2ae;
   overflow: hidden;
-}
-
-.top-bubble {
-  position: absolute;
-  transform: translate(-25%, -50%);
-}
-
-.btm-bubble {
-  position: absolute;
-  transform: translate(80%, 40%);
+  background-image: url("./images/bg-pattern-top.svg"), url("./images/bg-pattern-bottom.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left -48vw top -126vh, left 44vw top 38vh;
+  min-height: 100vh;
+  min-width: 100vw;
 }
 
 main {
@@ -78,14 +74,8 @@ main .info .stat .unit {
 }
 
 @media screen and (max-width: 375px) {
-  .top-bubble {
-    position: absolute;
-    transform: translate(-77%, -65%);
-  }
-
-  .btm-bubble {
-    position: absolute;
-    transform: translate(15%, 30%);
+  body {
+    background-position: right 54vw bottom 58vh, left 42vw top 110vw;
   }
 }
 
